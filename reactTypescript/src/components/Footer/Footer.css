@@ -1,0 +1,79 @@
+.footer{
+    padding: 3em 8em;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.floor {
+  display: flex;
+  padding: 0.5em 8em 2em;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.floor h3{
+    font-size: 1.3rem;
+    font-weight: bold;
+    color: rgb(48, 48, 92);
+}
+.floor p {
+    font-size: 0.8rem;
+    color: rgb(48, 48, 92);
+    opacity: 0.5;
+}
+
+.footer-links h3 {
+    font-weight: bold;
+    font-size: 1.1rem;
+    margin-bottom: 15px;
+    color: rgb(48, 48, 92);
+}
+
+.footer-links p{
+    margin-bottom: 10px;
+    font-size: 0.9rem;
+    color: rgb(48, 48, 92);
+}
+
+.footer-links:last-child{
+max-width: 15em;
+}
+.footer-links:last-child h3{
+    margin-bottom: 25px;
+    color: rgb(48, 48, 92);
+}
+.footer-links:last-child p{
+    margin-bottom: 20px;
+    color: rgb(48, 48, 92);
+}
+
+.social{
+    display: flex;
+    align-items: center;
+    color: white;
+}
+.social p{
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    font-weight: 500;
+    display: flex;
+    align-items: center; 
+    justify-content: center;
+    margin-right: 10px;
+    color: white;
+}
+
+p.facebook{
+    background-color: rgb(18, 82, 172);
+    z-index: 1;
+}
+p.Ins{
+    background-color: rgb(172, 18, 80);
+}
+p.twitter{
+    /* background-color: rgb(0, 0, 0); */
+    z-index: 1;
+    color: aliceblue;
+}

@@ -1,0 +1,71 @@
+.stats-content {
+    display: flex;
+    height: 70vh;
+    background-color: #ffffff1a;
+}
+
+.stats-image {
+    position: relative;
+    width: 50%;
+    padding: 5em 10em;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.stats-image .image {
+    position: relative;
+    max-width: 70%;
+    height: 100%;
+    border-radius: 10px;
+    background-color: #e6f0ff;
+}
+.stats-image img {
+    position: absolute;
+    width: 50%;
+    bottom: 0;
+}
+.stats-image .overlay{
+    position: absolute;
+    background-color: rgb(255, 255, 255);
+    top: 0;
+    left: -85px;
+    width: 60%;
+}
+.stats-text {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: center;
+    padding: 10em 15em 10em 5em;
+}
+.stats-text  h2{
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin-bottom: 20px;
+    color: rgb(48, 48, 92);
+}
+.stats-text  p{
+    font-size: 0.9rem;
+    color: rgb(48, 48, 92);
+    line-height: 1.7;
+}
+
+.stats-figures{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 3em 15em 5em;
+}
+
+.stats-figures h2{
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: rgb(48, 48, 92);
+}
+
+.stats-figures p{
+    font-size: 0.85rem;
+    font-weight: thin;
+}

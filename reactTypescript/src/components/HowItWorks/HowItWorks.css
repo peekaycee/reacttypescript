@@ -1,0 +1,58 @@
+.process {
+    padding: 4em 7em;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.process-text{
+    text-align: center;
+    max-width: 29em; 
+}
+
+.process-text::before{
+    content: '';
+    position: absolute;
+    width: 30px;
+    height: 3px;
+    border-radius: 50px;
+    background-color: rgb(48, 48, 92);
+}
+
+.process-text h2{
+    margin-top: 10px;
+ font-weight: bold;
+ font-size: 1.5rem;
+ color: rgb(48, 48, 92);
+ margin-bottom: 10px;
+}
+
+.process-cards{
+    display: flex;
+}
+
+.process-card{
+    padding: 1em;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 30px;
+}
+
+.process-card > img{
+    width: 50px;
+    margin-bottom: 10px;
+}
+.process-card h3{
+    font-size: 1rem;
+    font-weight: 500;
+}
+.process-card p{
+    font-size: 0.7rem;
+}
+
+.how-to-buy span img{
+    display: inline;
+    margin-left: 5px;
+}

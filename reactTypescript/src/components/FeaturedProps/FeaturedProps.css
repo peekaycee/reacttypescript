@@ -1,0 +1,79 @@
+.features {
+  background-color: #e6f0ff51;
+  margin-top: 1em;
+  padding: 5em 8em;
+}
+.features-text h2 {
+  font-weight: bold;
+  font-size: 1.5rem;
+  color: rgb(48, 48, 92);
+}
+.text {
+  display: flex;
+  justify-content: space-between;
+  color: rgb(48, 48, 92);
+}
+
+.text > p {
+  font-size: 0.8rem;
+  color: rgb(48, 48, 92);
+}
+.text > p:nth-child(2) {
+  color: dodgerblue;
+}
+.text span img {
+  display: inline;
+  cursor: pointer;
+}
+.feature-cards {
+  margin-top: 3em;
+  height: auto;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+}
+.feature-card {
+  width: 23%;
+  border-radius: 20px;
+  box-shadow: 0px 0px 2px 1px  #d1ecea26;
+}
+.feature-image {
+  background-color: #e6f0ff;
+  border-radius: 20px 20px 0 0;
+}
+
+.feature-image img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 20px 20px 0 0;
+}
+.address {
+  background-color: #fff;
+  padding: 1em;
+  border-radius: 0 0 20px 20px;
+}
+.address h3 {
+  font-weight: bold;
+  color: rgb(48, 48, 92);
+}
+.address p {
+  font-size: 0.6rem;
+  color: rgb(48, 48, 92);
+}
+.feature-icons {
+  display: flex;
+  align-items: center;
+  justify-content: start;
+  margin-top: 10px;
+}
+
+.feature-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-right: 2px;
+}
+.feature-icon img {
+  width: 25px;
+}
