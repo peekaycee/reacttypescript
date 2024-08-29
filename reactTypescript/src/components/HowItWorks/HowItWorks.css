@@ -1,58 +1,106 @@
 .process {
-    padding: 4em 7em;
+    padding: 2em 2em;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
 }
-.process-text{
+
+.process-text {
     text-align: center;
-    max-width: 29em; 
+    max-width: 90%;
+    position: relative;
+    margin-bottom: 2em;
 }
 
-.process-text::before{
+.process-text::before {
     content: '';
     position: absolute;
     width: 30px;
     height: 3px;
     border-radius: 50px;
     background-color: rgb(48, 48, 92);
+    top: -10px;
+    left: 50%;
+    transform: translateX(-50%);
 }
 
-.process-text h2{
-    margin-top: 10px;
- font-weight: bold;
- font-size: 1.5rem;
- color: rgb(48, 48, 92);
- margin-bottom: 10px;
+.process-text h2 {
+    margin-top: 20px;
+    font-weight: bold;
+    font-size: 1.5rem;
+    color: rgb(48, 48, 92);
+    margin-bottom: 10px;
 }
 
-.process-cards{
+.process-cards {
     display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
-.process-card{
+.process-card {
     padding: 1em;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    margin: 30px;
+    margin: 20px 0;
+    text-align: center;
 }
 
-.process-card > img{
+.process-card > img {
     width: 50px;
     margin-bottom: 10px;
 }
-.process-card h3{
+
+.process-card h3 {
     font-size: 1rem;
     font-weight: 500;
 }
-.process-card p{
-    font-size: 0.7rem;
+
+.process-card p {
+    font-size: 0.8rem;
 }
 
-.how-to-buy span img{
+.how-to-buy span img {
     display: inline;
     margin-left: 5px;
+}
+
+@media (min-width: 768px) {
+    .process {
+        padding: 4em 5em;
+    }
+
+    .process-text {
+        max-width: 40em;
+    }
+
+    .process-cards {
+        flex-direction: row;
+        justify-content: center;
+    }
+
+    .process-card {
+        margin: 20px;
+    }
+}
+
+@media (min-width: 1024px) {
+    .process {
+        padding: 4em 7em;
+    }
+
+    .process-text {
+        max-width: 29em;
+    }
+
+    .process-cards {
+        justify-content: space-around;
+    }
+
+    .process-card {
+        margin: 30px;
+    }
 }

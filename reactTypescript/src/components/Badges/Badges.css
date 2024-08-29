@@ -2,33 +2,71 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 5em 7em 1em;
+  flex-wrap: wrap;
+  padding: 3em 2em 1em;
 }
+
 .ratings h1 {
   font-size: 1.5rem;
   font-weight: bold;
   color: rgb(48, 48, 92);
 }
+
 .ratings p {
   font-size: 0.9rem;
   margin-top: 5px;
   color: rgb(48, 48, 92);
 }
+
 .company-badges {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 0.5em 5em 2em;
+  flex-wrap: wrap;
+  padding: 1em 2em 2em;
 }
-.company-badges img{
-    width: 15%;
-    height: auto;
+
+.company-badges img {
+  width: 20%;
+  height: auto;
+  margin: 0.5em 0;
 }
+
 .star-rating {
   display: flex;
   flex-direction: column;
+  align-items: flex-end;
+  margin-top: 1em;
 }
+
 .star-rating img {
-  width: 100px;
-  place-self: end;
+  width: 80px;
+}
+
+@media (min-width: 768px) {
+  .ratings {
+    padding: 3em 5em 1em;
+  }
+
+  .company-badges {
+    padding: 0.5em 5em 2em;
+  }
+
+  .company-badges img {
+    width: 15%;
+  }
+
+  .star-rating img {
+    width: 100px;
+  }
+}
+
+@media (min-width: 1024px) {
+  .ratings {
+    padding: 5em 7em 1em;
+  }
+
+  .company-badges {
+    padding: 0.5em 7em 2em;
+  }
 }

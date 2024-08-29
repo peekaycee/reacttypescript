@@ -1,43 +1,55 @@
 .features {
   background-color: #e6f0ff51;
   margin-top: 1em;
-  padding: 5em 8em;
+  padding: 2em 2em;
 }
+
 .features-text h2 {
   font-weight: bold;
   font-size: 1.5rem;
   color: rgb(48, 48, 92);
+  text-align: center;
 }
+
 .text {
   display: flex;
-  justify-content: space-between;
+  flex-direction: column;
+  align-items: center;
   color: rgb(48, 48, 92);
+  margin-top: 1em;
 }
 
 .text > p {
-  font-size: 0.8rem;
+  font-size: 0.9rem;
   color: rgb(48, 48, 92);
+  margin: 0.5em 0;
 }
+
 .text > p:nth-child(2) {
   color: dodgerblue;
 }
+
 .text span img {
   display: inline;
   cursor: pointer;
 }
+
 .feature-cards {
-  margin-top: 3em;
-  height: auto;
+  margin-top: 2em;
   display: flex;
-  flex-wrap: wrap;
+  flex-direction: column;
   align-items: center;
-  justify-content: space-between;
+  justify-content: center;
 }
+
 .feature-card {
-  width: 23%;
+  width: 100%;
+  max-width: 90%;
+  margin-bottom: 1.5em;
   border-radius: 20px;
-  box-shadow: 0px 0px 2px 1px  #d1ecea26;
+  box-shadow: 0px 0px 2px 1px #d1ecea26;
 }
+
 .feature-image {
   background-color: #e6f0ff;
   border-radius: 20px 20px 0 0;
@@ -48,23 +60,27 @@
   height: auto;
   border-radius: 20px 20px 0 0;
 }
+
 .address {
   background-color: #fff;
   padding: 1em;
   border-radius: 0 0 20px 20px;
 }
+
 .address h3 {
   font-weight: bold;
   color: rgb(48, 48, 92);
 }
+
 .address p {
-  font-size: 0.6rem;
+  font-size: 0.7rem;
   color: rgb(48, 48, 92);
 }
+
 .feature-icons {
   display: flex;
   align-items: center;
-  justify-content: start;
+  justify-content: flex-start;
   margin-top: 10px;
 }
 
@@ -74,6 +90,43 @@
   justify-content: center;
   margin-right: 2px;
 }
+
 .feature-icon img {
   width: 25px;
+}
+
+@media (min-width: 768px) {
+  .features {
+    padding: 4em 5em;
+  }
+
+  .text {
+    flex-direction: row;
+    justify-content: space-between;
+    margin-top: 1em;
+  }
+
+  .feature-cards {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+
+  .feature-card {
+    width: 48%;
+    max-width: 48%;
+    margin-bottom: 2em;
+  }
+}
+
+@media (min-width: 1024px) {
+  .features {
+    padding: 5em 8em;
+  }
+
+  .feature-card {
+    width: 23%;
+    max-width: 23%;
+    margin-bottom: 2em;
+  }
 }

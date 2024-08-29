@@ -1,71 +1,141 @@
 .stats-content {
-    display: flex;
-    height: 70vh;
-    background-color: #ffffff1a;
+  display: flex;
+  height: 70vh;
+  background-color: #ffffff1a;
 }
 
 .stats-image {
-    position: relative;
-    width: 50%;
-    padding: 5em 10em;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+  position: relative;
+  width: 50%;
+  padding: 5em 10em;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .stats-image .image {
-    position: relative;
-    max-width: 70%;
-    height: 100%;
-    border-radius: 10px;
-    background-color: #e6f0ff;
+  position: relative;
+  max-width: 70%;
+  height: 100%;
+  border-radius: 10px;
+  background-color: #e6f0ff;
 }
 .stats-image img {
-    position: absolute;
-    width: 50%;
-    bottom: 0;
+  position: absolute;
+  width: 50%;
+  bottom: 0;
 }
-.stats-image .overlay{
-    position: absolute;
-    background-color: rgb(255, 255, 255);
-    top: 0;
-    left: -85px;
-    width: 60%;
+.stats-image .overlay {
+  position: absolute;
+  background-color: rgb(255, 255, 255);
+  top: 0;
+  left: -85px;
+  width: 60%;
 }
 .stats-text {
-    width: 50%;
-    display: flex;
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  justify-content: center;
+  padding: 10em 15em 10em 5em;
+}
+.stats-text h2 {
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin-bottom: 20px;
+  color: rgb(48, 48, 92);
+}
+.stats-text p {
+  font-size: 0.9rem;
+  color: rgb(48, 48, 92);
+  line-height: 1.7;
+}
+
+.stats-figures {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 3em 15em 5em;
+}
+
+.stats-figures h2 {
+  font-size: 2.5rem;
+  font-weight: bold;
+  color: rgb(48, 48, 92);
+}
+
+.stats-figures p {
+  font-size: 0.85rem;
+  font-weight: thin;
+}
+
+/* Media Queries for Responsiveness */
+
+/* Tablet View */
+@media (max-width: 1024px) {
+  .stats-content {
     flex-direction: column;
-    align-items: start;
-    justify-content: center;
-    padding: 10em 15em 10em 5em;
-}
-.stats-text  h2{
-    font-size: 1.5rem;
-    font-weight: bold;
-    margin-bottom: 20px;
-    color: rgb(48, 48, 92);
-}
-.stats-text  p{
-    font-size: 0.9rem;
-    color: rgb(48, 48, 92);
-    line-height: 1.7;
+    height: auto;
+  }
+
+  .stats-text {
+    width: 100%;
+    padding: 5em 3em;
+  }
+
+  .stats-figures {
+    flex-direction: column;
+    padding: 2em 3em;
+  }
+
+  .stats-figures h2 {
+    font-size: 2rem;
+    text-align: center;
+  }
+
+  .stats-figures p {
+    font-size: 0.8rem;
+    text-align: center;
+  }
 }
 
-.stats-figures{
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding: 3em 15em 5em;
+/* Mobile View */
+@media (max-width: 1024px) {
+  .stats-text {
+    padding: 7em;
+  }
+  .stats-image {
+    display: none;
+  }
+  .stats-figures {
+    padding: 2em 5em;
+    flex-direction: row;
+  }
 }
+@media (max-width: 768px) {
+  .stats-text {
+    padding: 5em;
+    text-align: center;
+  }
 
-.stats-figures h2{
-    font-size: 2.5rem;
-    font-weight: bold;
-    color: rgb(48, 48, 92);
-}
+  .stats-image {
+    display: none;
+  }
+  .stats-text h2 {
+    text-align: center;
+  }
+  .stats-figures {
+    padding: 2em 1.5em;
+    flex-direction: column;
+  }
 
-.stats-figures p{
-    font-size: 0.85rem;
-    font-weight: thin;
+  .stats-figures h2 {
+    font-size: 1.8rem;
+  }
+
+  .stats-figures p {
+    font-size: 0.75rem;
+    margin-bottom: 2em;
+  }
 }

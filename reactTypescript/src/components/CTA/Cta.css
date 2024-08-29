@@ -1,31 +1,36 @@
 .cta {
-  padding: 3em 8em;
+  padding: 2em 2em;
 }
+
 .call-to-action {
   background-color: rgb(23, 23, 94);
   width: 100%;
   height: auto;
   display: flex;
-  padding: 0 4em;
+  flex-direction: column;
+  align-items: center;
+  padding: 2em;
   border-radius: 20px;
 }
 
 .cta-text {
-  width: 55%;
+  width: 100%;
   display: flex;
   flex-direction: column;
   justify-content: center;
+  text-align: center;
 }
 
 .cta-text h2 {
   color: #fff;
   font-weight: bold;
-  font-size: 1.3rem;
-  margin-bottom: 5px;
+  font-size: 1.5rem;
+  margin-bottom: 10px;
 }
+
 .cta-text p {
   color: #fff;
-  font-size: 0.7rem;
+  font-size: 0.9rem;
 }
 
 .cta-text button {
@@ -34,15 +39,70 @@
   background-color: #fff;
   color: rgb(35, 35, 143);
   font-size: 1rem;
-  padding: 0.8em;
+  padding: 0.8em 1.5em;
+  border: none;
+  border-radius: 5px;
 }
 
 .cta-image {
   position: relative;
+  margin-top: 2em;
+  width: 100%;
+  text-align: center;
 }
 
 .cta-image img {
-  margin-top: -25px;
-  width: 80%;
+  width: 60%;
   border-radius: 30px 30px 0 0;
+}
+
+@media (max-width: 768px) {
+  .cta {
+      padding: 3em 6em;
+  }
+  .cta-text button{
+  margin: 20px auto;
+}
+  .cta-image img {
+  margin: 0 auto;
+  border-radius: 50px;
+}
+   
+}
+@media (min-width: 768px) {
+  .cta {
+      padding: 3em 6em;
+  }
+
+  .call-to-action {
+      flex-direction: row;
+      align-items: center;
+      padding: 0 4em;
+  }
+
+  .cta-text {
+      width: 55%;
+      text-align: left;
+  }
+
+  .cta-image {
+      margin: 0 auto;
+      width: 45%;
+      text-align: right;
+  }
+
+  .cta-image img {
+      width: 80%;
+      margin-top: -25px;
+  }
+}
+
+@media (min-width: 1024px) {
+  .cta {
+      padding: 3em 8em;
+  }
+
+  .cta-image img {
+      width: 70%;
+  }
 }
